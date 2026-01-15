@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharma Medical Store | Licensed Pharmacy</title>
+
+<style>
+:root{
+  --primary:#0a8f8f;
+  --secondary:#0d6efd;
+  --light:#f8fefe;
+  --dark:#1f2937;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body{
+  background:var(--light);
+  color:var(--dark);
+  line-height:1.6;
+}
+
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  background:#ffffff;
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  z-index:100;
+}
+
+.navbar{
+  max-width:1200px;
+  margin:auto;
+  padding:15px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo h1{
+  color:var(--primary);
+  font-size:26px;
+}
+.logo p{
+  font-size:13px;
+  color:#555;
+}
+
+nav a{
+  margin-left:25px;
+  text-decoration:none;
+  color:#333;
+  font-weight:600;
+}
+nav a:hover{
+  color:var(--primary);
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(135deg,#e6fafa,#ffffff);
+  padding:90px 20px;
+}
+
+.hero-inner{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:center;
+}
+
+.hero h2{
+  font-size:44px;
+  color:var(--primary);
+}
+.hero p{
+  margin:20px 0;
+  font-size:18px;
+}
+
+.hero a{
+  display:inline-block;
+  padding:14px 28px;
+  background:var(--primary);
+  color:#fff;
+  text-decoration:none;
+  border-radius:6px;
+  font-weight:600;
+}
+
+/* SECTIONS */
+section{
+  padding:70px 20px;
+}
+.container{
+  max-width:1100px;
+  margin:auto;
+}
+section h2{
+  text-align:center;
+  font-size:34px;
+  color:var(--primary);
+  margin-bottom:40px;
+}
+
+/* ABOUT */
+.about p{
+  max-width:900px;
+  margin:auto;
+  text-align:center;
+  font-size:18px;
+}
+
+/* SERVICES */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.service{
+  background:#fff;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.07);
+  text-align:center;
+  transition:transform .3s;
+}
+.service:hover{
+  transform:translateY(-6px);
+}
+.service h3{
+  margin-bottom:10px;
+  color:var(--secondary);
+}
+
+/* PHARMACIST */
+.pharmacist{
+  background:linear-gradient(135deg,#ffffff,#e6fafa);
+}
+.card{
+  max-width:500px;
+  margin:auto;
+  background:#fff;
+  padding:35px;
+  border-radius:12px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.1);
+  text-align:center;
+}
+.card h3{
+  font-size:26px;
+  color:var(--primary);
+}
+.card p{
+  margin-top:10px;
+  font-size:16px;
+}
+
+/* CONTACT */
+.contact-box{
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.contact-box div{
+  background:#fff;
+  padding:25px;
+  border-radius:10px;
+  box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+iframe{
+  width:100%;
+  height:250px;
+  border:none;
+  border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+  background:var(--primary);
+  color:#fff;
+  text-align:center;
+  padding:20px;
+  margin-top:60px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .hero-inner{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+  .contact-box{
+    grid-template-columns:1fr;
+  }
+  nav{
+    display:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">
+      <h1>Sharma Medical Store</h1>
+      <p>Licensed Pharmacy • Kartik Sharma (B.Pharma)</p>
+    </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#pharmacist">Pharmacist</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div>
+      <h2>Trusted Medical Store in Khanna</h2>
+      <p>
+        Genuine medicines, ethical pharmacy practices and professional
+        healthcare support for your family.
+      </p>
+      <a href="https://wa.me/916284514807" target="_blank">Order on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <h2>About Us</h2>
+    <p>
+      Sharma Medical Store is a licensed and professionally managed pharmacy
+      located near Raj Hospital, Khanna. We are committed to patient safety,
+      quality medicines and responsible pharmaceutical care under the
+      supervision of a qualified pharmacist.
+    </p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service"><h3>Prescription Medicines</h3></div>
+      <div class="service"><h3>OTC Medicines</h3></div>
+      <div class="service"><h3>Generic Medicines</h3></div>
+      <div class="service"><h3>Surgical Items</h3></div>
+      <div class="service"><h3>Baby Care Products</h3></div>
+      <div class="service"><h3>Health Supplements</h3></div>
+      <div class="service"><h3>BP & Sugar Care</h3></div>
+      <div class="service"><h3>Home Delivery</h3></div>
+    </div>
+  </div>
+</section>
+
+<section class="pharmacist" id="pharmacist">
+  <div class="container">
+    <h2>Our Pharmacist</h2>
+    <div class="card">
+      <h3>Kartik Sharma</h3>
+      <p><strong>Qualification:</strong> B.Pharma</p>
+      <p><strong>Experience:</strong> 2 Years</p>
+      <p>
+        Ensuring correct dispensing, patient guidance and ethical
+        pharmaceutical practices.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-box">
+      <div>
+        <p><strong>Address:</strong><br>
+        Sharma Medical Store,<br>
+        Near Raj Hospital, Lalheri Road,<br>
+        Khanna, Punjab – 141401</p>
+
+        <p><strong>Phone:</strong> 6284514807</p>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps?q=Sharma%20Medical%20Store%20Khanna&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Sharma Medical Store. All Rights Reserved.
+</footer>
+
+</body>
+</html>
