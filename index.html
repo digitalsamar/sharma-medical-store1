@@ -1279,6 +1279,11 @@
             .footer-grid-layout { grid-template-columns: 1fr 1fr; }
         }
 
+
+        body.menu-open {
+            overflow: hidden;
+        }
+
         @media (max-width: 768px) {
             .top-announcement-bar { display: none; }
             .desktop-only-btn { display: none; }
@@ -1375,6 +1380,621 @@
             body { padding-bottom: 74px; }
             .floating-whatsapp-btn { bottom: 84px; right: 16px; width: 54px; height: 54px; font-size: 1.7rem; }
         }
+
+        /* =========================================================
+           MOBILE UX UPGRADE
+           Optimized for phones from 320px to 768px
+           ========================================================= */
+        html {
+            scroll-padding-top: 82px;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            min-width: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .btn,
+        .hamburger-menu-btn,
+        .drawer-close,
+        .dock-btn {
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-bottom: calc(76px + env(safe-area-inset-bottom));
+            }
+
+            .container {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+
+            .section-padding {
+                padding: 56px 0;
+            }
+
+            .section-heading {
+                font-size: 1.78rem;
+                line-height: 1.2;
+                letter-spacing: -0.35px;
+            }
+
+            .section-subtext {
+                font-size: 0.94rem;
+                line-height: 1.6;
+                margin-bottom: 28px;
+            }
+
+            .btn {
+                min-height: 48px;
+                padding: 12px 18px;
+            }
+
+            /* Header */
+            .header-nav {
+                padding: 9px 0;
+            }
+
+            .nav-container {
+                min-height: 48px;
+            }
+
+            .brand-identity {
+                min-width: 0;
+                gap: 9px;
+            }
+
+            .brand-icon-box {
+                width: 40px;
+                height: 40px;
+                flex: 0 0 40px;
+                border-radius: 11px;
+                font-size: 1rem;
+            }
+
+            .brand-title {
+                font-size: 1rem;
+                line-height: 1.15;
+            }
+
+            .brand-subtitle {
+                font-size: 0.68rem;
+                line-height: 1.2;
+            }
+
+            .hamburger-menu-btn {
+                width: 44px;
+                height: 44px;
+                flex: 0 0 44px;
+            }
+
+            /* Mobile drawer */
+            .nav-drawer {
+                width: min(88vw, 360px);
+                max-width: none;
+                padding:
+                    calc(18px + env(safe-area-inset-top))
+                    20px
+                    calc(24px + env(safe-area-inset-bottom));
+                border-radius: 18px 0 0 18px;
+            }
+
+            .nav-links-list {
+                gap: 8px;
+            }
+
+            .nav-link {
+                font-size: 1rem;
+                min-height: 48px;
+                display: flex;
+                align-items: center;
+                border-radius: 10px;
+                padding: 8px 10px;
+            }
+
+            .nav-link::after {
+                display: none;
+            }
+
+            .nav-link.active {
+                background: var(--primary-light);
+            }
+
+            .drawer-footer-cta {
+                margin-top: 24px;
+            }
+
+            /* Hero */
+            .hero-section {
+                padding: 32px 0 48px;
+            }
+
+            .hero-grid {
+                gap: 26px;
+            }
+
+            .hero-graphic-col {
+                order: -1;
+                width: 100%;
+                padding: 10px 2px 12px;
+            }
+
+            .glass-pharmacy-card {
+                max-width: none;
+                padding: 22px 18px;
+                border-radius: 20px;
+            }
+
+            .card-top-row {
+                gap: 12px;
+                margin-bottom: 18px;
+            }
+
+            .pulse-cross-icon {
+                width: 48px;
+                height: 48px;
+                flex: 0 0 48px;
+                font-size: 1.2rem;
+            }
+
+            .card-top-row h3 {
+                font-size: 1.05rem;
+            }
+
+            .card-top-row p {
+                font-size: 0.74rem;
+            }
+
+            .card-stats-grid {
+                gap: 10px;
+                margin-bottom: 12px;
+            }
+
+            .stat-box {
+                padding: 14px 8px;
+            }
+
+            .stat-num {
+                font-size: 1rem;
+            }
+
+            .stat-label {
+                font-size: 0.72rem;
+            }
+
+            .card-prescription-banner {
+                padding: 11px 12px;
+                font-size: 0.78rem;
+                gap: 8px;
+            }
+
+            .floating-badge {
+                position: static;
+                width: fit-content;
+                max-width: 100%;
+                font-size: 0.72rem;
+                padding: 7px 11px;
+                margin-top: 8px;
+            }
+
+            .badge-top-pos,
+            .badge-bot-pos {
+                position: static;
+            }
+
+            .hero-text-col {
+                width: 100%;
+            }
+
+            .pill-badge {
+                max-width: 100%;
+                font-size: 0.68rem;
+                padding: 6px 11px;
+                margin-bottom: 14px;
+            }
+
+            .hero-main-title {
+                font-size: clamp(1.85rem, 8vw, 2.25rem);
+                line-height: 1.12;
+                letter-spacing: -0.7px;
+                margin-bottom: 14px;
+            }
+
+            .hero-lead-text {
+                font-size: 0.96rem;
+                line-height: 1.6;
+                margin-bottom: 22px;
+            }
+
+            .hero-action-buttons {
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: 24px;
+            }
+
+            .hero-action-buttons .btn {
+                width: 100%;
+            }
+
+            .hero-micro-trust {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 10px;
+                padding-top: 18px;
+            }
+
+            .micro-trust-item {
+                font-size: 0.82rem;
+            }
+
+            /* Trust strip */
+            .trust-strip-bar {
+                padding: 20px 0;
+            }
+
+            .trust-strip-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .trust-block {
+                gap: 9px;
+                align-items: flex-start;
+                min-width: 0;
+            }
+
+            .trust-block i {
+                font-size: 1.25rem;
+                flex: 0 0 auto;
+            }
+
+            .trust-block h4 {
+                font-size: 0.78rem;
+                line-height: 1.25;
+            }
+
+            .trust-block p {
+                font-size: 0.68rem;
+                line-height: 1.35;
+            }
+
+            /* About */
+            .about-split-grid,
+            .location-split-grid {
+                gap: 26px;
+            }
+
+            .paragraph-text {
+                font-size: 0.94rem;
+                line-height: 1.65;
+                margin-bottom: 14px;
+            }
+
+            .checklist-stack {
+                gap: 11px;
+                margin-top: 20px;
+            }
+
+            .check-row {
+                font-size: 0.88rem;
+                align-items: flex-start;
+            }
+
+            .premium-trust-box,
+            .location-card-box {
+                padding: 24px 20px;
+                border-radius: 20px;
+            }
+
+            .premium-trust-box h3 {
+                font-size: 1.2rem;
+            }
+
+            /* Services / cards */
+            .services-grid-layout,
+            .why-grid-layout {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .service-premium-card {
+                padding: 20px 18px;
+                border-radius: 16px;
+                display: grid;
+                grid-template-columns: 46px 1fr;
+                column-gap: 14px;
+                align-items: start;
+            }
+
+            .service-icon-box {
+                width: 46px;
+                height: 46px;
+                grid-row: span 2;
+                margin-bottom: 0;
+            }
+
+            .service-premium-card h3 {
+                font-size: 1rem;
+                margin-bottom: 4px;
+            }
+
+            .service-premium-card p {
+                font-size: 0.82rem;
+                line-height: 1.5;
+            }
+
+            .why-card-item {
+                padding: 22px 18px;
+            }
+
+            /* How to order */
+            .steps-grid-layout {
+                gap: 12px;
+                margin-bottom: 28px;
+            }
+
+            .step-card-item {
+                padding: 22px 18px;
+                border-radius: 16px;
+            }
+
+            .step-number-big {
+                font-size: 1.9rem;
+                margin-bottom: 8px;
+            }
+
+            .step-card-item h3 {
+                font-size: 1.05rem;
+            }
+
+            .step-card-item p {
+                font-size: 0.84rem;
+                line-height: 1.5;
+            }
+
+            .legal-disclaimer-text {
+                font-size: 0.72rem;
+                line-height: 1.5;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            /* Pharmacist */
+            .pharmacist-profile-card {
+                padding: 24px 18px;
+                gap: 24px;
+                border-radius: 20px;
+            }
+
+            .avatar-circle-box {
+                width: 150px;
+                height: 150px;
+                font-size: 3.3rem;
+            }
+
+            .badge-overlay-bpharma {
+                font-size: 0.72rem;
+                padding: 5px 12px;
+            }
+
+            .quote-text {
+                font-size: 0.94rem;
+                line-height: 1.55;
+                margin-bottom: 20px;
+            }
+
+            .pharmacist-features-grid {
+                grid-template-columns: 1fr;
+                gap: 13px;
+            }
+
+            .feat-box h4 {
+                font-size: 0.88rem;
+            }
+
+            .feat-box p {
+                font-size: 0.76rem;
+            }
+
+            /* Location */
+            .loc-addr,
+            .loc-phone {
+                font-size: 0.9rem;
+                gap: 10px;
+                margin-bottom: 14px;
+            }
+
+            .location-buttons-stack {
+                margin-top: 18px;
+                gap: 9px;
+            }
+
+            .map-frame-box {
+                min-height: 280px;
+                height: 280px;
+                border-radius: 18px;
+            }
+
+            .map-frame-box iframe {
+                display: block;
+                width: 100%;
+                height: 100%;
+                min-height: 280px;
+            }
+
+            /* Contact */
+            .contact-banner-gradient {
+                padding: 52px 0;
+            }
+
+            .contact-banner-gradient h2 {
+                font-size: 1.75rem;
+            }
+
+            .contact-banner-gradient p {
+                font-size: 0.92rem;
+                line-height: 1.55;
+                margin-bottom: 24px;
+            }
+
+            .banner-btns-flex {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .banner-btns-flex .btn {
+                width: 100%;
+            }
+
+            /* Footer */
+            .footer-section {
+                padding: 50px 0 24px;
+            }
+
+            .footer-grid-layout {
+                gap: 28px;
+                margin-bottom: 28px;
+            }
+
+            .footer-col-links h4,
+            .footer-col-contact h4 {
+                font-size: 1rem;
+                margin-bottom: 13px;
+            }
+
+            .footer-nav-list {
+                gap: 9px;
+            }
+
+            .footer-nav-list a,
+            .footer-col-contact p {
+                font-size: 0.82rem;
+            }
+
+            .footer-legal-disclaimer {
+                font-size: 0.72rem;
+                padding: 16px 0;
+                margin-bottom: 18px;
+            }
+
+            .footer-bottom-row {
+                font-size: 0.72rem;
+                line-height: 1.5;
+            }
+
+            /* Floating actions */
+            .floating-whatsapp-btn {
+                width: 52px;
+                height: 52px;
+                right: 14px;
+                bottom: calc(84px + env(safe-area-inset-bottom));
+                font-size: 1.55rem;
+            }
+
+            .floating-whatsapp-btn .tooltip-box {
+                display: none;
+            }
+
+            .mobile-sticky-dock {
+                padding:
+                    7px
+                    8px
+                    calc(7px + env(safe-area-inset-bottom));
+                gap: 7px;
+            }
+
+            .dock-btn {
+                min-height: 52px;
+                padding: 6px 3px;
+                font-size: 0.68rem;
+                border-radius: 11px;
+            }
+
+            .dock-btn i {
+                font-size: 1.05rem;
+            }
+
+            /* Remove hover movement on touch devices */
+            .service-premium-card:hover,
+            .why-card-item:hover,
+            .btn-primary:hover,
+            .btn-whatsapp:hover,
+            .floating-whatsapp-btn:hover {
+                transform: none;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .container {
+                padding-left: 13px;
+                padding-right: 13px;
+            }
+
+            .brand-title {
+                font-size: 0.94rem;
+            }
+
+            .brand-subtitle {
+                font-size: 0.63rem;
+            }
+
+            .hero-main-title {
+                font-size: 1.78rem;
+            }
+
+            .hero-lead-text {
+                font-size: 0.9rem;
+            }
+
+            .trust-strip-grid {
+                gap: 8px;
+            }
+
+            .trust-block {
+                gap: 7px;
+            }
+
+            .trust-block h4 {
+                font-size: 0.72rem;
+            }
+
+            .trust-block p {
+                font-size: 0.62rem;
+            }
+
+            .glass-pharmacy-card {
+                padding: 18px 14px;
+            }
+
+            .card-stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .service-premium-card {
+                grid-template-columns: 42px 1fr;
+                column-gap: 11px;
+                padding: 17px 14px;
+            }
+
+            .service-icon-box {
+                width: 42px;
+                height: 42px;
+            }
+
+            .dock-btn {
+                min-height: 50px;
+                font-size: 0.63rem;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -1876,7 +2496,16 @@
 
             function toggleMenu() {
                 navDrawer.classList.toggle('active');
+                document.body.classList.toggle('menu-open', navDrawer.classList.contains('active'));
             }
+
+            // Close mobile menu with Escape and restore page scrolling.
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape' && navDrawer.classList.contains('active')) {
+                    navDrawer.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                }
+            });
 
             if (hamburgerBtn) hamburgerBtn.addEventListener('click', toggleMenu);
             if (drawerClose) drawerClose.addEventListener('click', toggleMenu);
@@ -1886,6 +2515,7 @@
                 link.addEventListener('click', () => {
                     if (navDrawer.classList.contains('active')) {
                         navDrawer.classList.remove('active');
+                        document.body.classList.remove('menu-open');
                     }
                 });
             });
