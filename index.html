@@ -1,2570 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Sharma Medical Store | Trusted Pharmacy in Khanna</title>
-    <meta name="description" content="Sharma Medical Store is a licensed pharmacy near Raj Hospital, Lalheri Road, Khanna, offering prescription medicines, OTC medicines, generic medicines, surgical items, baby care products, health supplements and local pharmacy support.">
-    <meta name="keywords" content="Sharma Medical Store Khanna, medical store in Khanna, pharmacy in Khanna, medical shop near Raj Hospital, pharmacy near Lalheri Road, medicine store Khanna, chemist shop Khanna">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Pharmacy",
-      "name": "Sharma Medical Store",
-      "telephone": "+916284514807",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Near Raj Hospital, Lalheri Road",
-        "addressLocality": "Khanna",
-        "addressRegion": "Punjab",
-        "postalCode": "141401",
-        "addressCountry": "IN"
-      },
-      "priceRange": "₹"
-    }
-    </script>
-
-    <style>
-        /* ================================================= */
-        /* ULTRA-PREMIUM MEDICAL DESIGN SYSTEM               */
-        /* ================================================= */
-        :root {
-            --primary: #0A3951;
-            --primary-dark: #04202E;
-            --primary-light: #EBF3F7;
-            --secondary: #00778B;
-            --secondary-hover: #005F6F;
-            --accent: #00A8B5;
-            --bg-main: #FFFFFF;
-            --bg-alt: #F3F7F9;
-            --text-main: #111C24;
-            --text-muted: #536471;
-            --border-color: #E1E8EE;
-            --shadow-sm: 0 4px 16px rgba(10, 57, 81, 0.05);
-            --shadow-md: 0 12px 36px rgba(10, 57, 81, 0.09);
-            --shadow-lg: 0 24px 60px rgba(10, 57, 81, 0.15);
-            --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            --radius-sm: 12px;
-            --radius-md: 18px;
-            --radius-lg: 26px;
-        }
-
-        /* RESET & BASE */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
-        }
-
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-
-        body {
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            color: var(--text-main);
-            background-color: var(--bg-main);
-            line-height: 1.6;
-            overflow-x: hidden;
-            padding-bottom: 76px; /* Space for mobile sticky dock */
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Outfit', sans-serif;
-            color: var(--primary-dark);
-            font-weight: 700;
-            line-height: 1.25;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-            transition: var(--transition);
-        }
-
-        ul { list-style: none; }
-        img { max-width: 100%; height: auto; }
-
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .section-padding {
-            padding: 80px 0;
-        }
-
-        .text-center { text-align: center; }
-        .bg-light-tint { background-color: var(--bg-alt); }
-
-        /* BADGES & TITLES */
-        .section-badge-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--secondary);
-            background-color: var(--primary-light);
-            padding: 6px 14px;
-            border-radius: 50px;
-            margin-bottom: 14px;
-        }
-
-        .section-heading {
-            font-size: 2.2rem;
-            margin-bottom: 12px;
-            letter-spacing: -0.5px;
-        }
-
-        .section-subtext {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-            max-width: 600px;
-            margin: 0 auto 40px auto;
-        }
-
-        /* BUTTONS STYLING */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 14px 28px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            border-radius: var(--radius-sm);
-            cursor: pointer;
-            transition: var(--transition);
-            border: 2px solid transparent;
-            text-align: center;
-        }
-
-        .btn-primary {
-            background-color: var(--secondary);
-            color: #FFFFFF;
-            box-shadow: 0 4px 16px rgba(0, 119, 139, 0.3);
-        }
-
-        .btn-primary:hover, .btn-primary:active {
-            background-color: var(--secondary-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 119, 139, 0.4);
-        }
-
-        .btn-whatsapp {
-            background-color: #25D366;
-            color: #FFFFFF;
-            box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
-        }
-
-        .btn-whatsapp:hover {
-            background-color: #20BA5A;
-            transform: translateY(-2px);
-        }
-
-        .btn-outline {
-            background-color: transparent;
-            border-color: var(--secondary);
-            color: var(--secondary);
-        }
-
-        .btn-outline:hover {
-            background-color: var(--secondary);
-            color: #FFFFFF;
-        }
-
-        .btn-glass {
-            background-color: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(10px);
-            border-color: var(--border-color);
-            color: var(--primary-dark);
-        }
-
-        .btn-glass:hover {
-            background-color: #FFFFFF;
-            border-color: var(--secondary);
-        }
-
-        .btn-white {
-            background-color: #FFFFFF;
-            color: var(--primary);
-        }
-
-        .btn-outline-white {
-            background-color: transparent;
-            border-color: #FFFFFF;
-            color: #FFFFFF;
-        }
-
-        .btn-outline-white:hover {
-            background-color: #FFFFFF;
-            color: var(--primary);
-        }
-
-        .btn-xl {
-            padding: 16px 32px;
-            font-size: 1.05rem;
-        }
-
-        .btn-block {
-            width: 100%;
-        }
-
-        /* ================================================= */
-        /* TOP ANNOUNCEMENT BAR                              */
-        /* ================================================= */
-        .top-announcement-bar {
-            background-color: var(--primary-dark);
-            color: #CFD8DC;
-            font-size: 0.82rem;
-            padding: 9px 0;
-        }
-
-        .bar-flex {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .bar-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .bar-item i {
-            color: var(--accent);
-        }
-
-        .highlight-phone {
-            color: #FFFFFF;
-            font-weight: 600;
-        }
-
-        .highlight-phone:hover {
-            color: var(--accent);
-        }
-
-        /* ================================================= */
-        /* STICKY HEADER & NAV                               */
-        /* ================================================= */
-        .header-nav {
-            position: sticky;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgba(255, 255, 255, 0.96);
-            backdrop-filter: blur(12px);
-            box-shadow: var(--shadow-sm);
-            z-index: 1000;
-            transition: var(--transition);
-            padding: 12px 0;
-        }
-
-        .header-nav.scrolled {
-            padding: 8px 0;
-            box-shadow: var(--shadow-md);
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .brand-identity {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .brand-icon-box {
-            width: 44px;
-            height: 44px;
-            background: linear-gradient(135deg, var(--secondary), var(--primary));
-            color: #FFFFFF;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: var(--radius-sm);
-            font-size: 1.2rem;
-            box-shadow: 0 4px 12px rgba(0, 119, 139, 0.3);
-        }
-
-        .brand-titles {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .brand-title {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-            font-size: 1.15rem;
-            color: var(--primary-dark);
-            letter-spacing: -0.3px;
-        }
-
-        .brand-subtitle {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            font-weight: 600;
-        }
-
-        /* NAV DRAWER */
-        .nav-drawer {
-            display: flex;
-            align-items: center;
-            gap: 28px;
-        }
-
-        .drawer-header {
-            display: none;
-        }
-
-        .nav-links-list {
-            display: flex;
-            gap: 24px;
-            align-items: center;
-        }
-
-        .nav-link {
-            font-weight: 600;
-            font-size: 0.92rem;
-            color: var(--text-main);
-            position: relative;
-            padding: 4px 0;
-        }
-
-        .nav-link:hover, .nav-link.active {
-            color: var(--secondary);
-        }
-
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--secondary);
-            transition: var(--transition);
-        }
-
-        .nav-link:hover::after, .nav-link.active::after {
-            width: 100%;
-        }
-
-        .drawer-footer-cta {
-            display: none;
-        }
-
-        .nav-actions-right {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .hamburger-menu-btn {
-            display: none;
-            background: var(--primary-light);
-            border: none;
-            cursor: pointer;
-            width: 42px;
-            height: 42px;
-            border-radius: var(--radius-sm);
-            position: relative;
-            z-index: 1001;
-            padding: 8px;
-        }
-
-        .hamburger-menu-btn .line {
-            display: block;
-            width: 100%;
-            height: 2.5px;
-            background-color: var(--secondary);
-            margin: 5px 0;
-            transition: var(--transition);
-            border-radius: 2px;
-        }
-
-        /* ================================================= */
-        /* HERO SECTION                                      */
-        /* ================================================= */
-        .hero-section {
-            background: linear-gradient(135deg, var(--bg-alt) 0%, #FFFFFF 100%);
-            padding: 60px 0 90px 0;
-            position: relative;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.15fr 0.85fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .pill-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background-color: rgba(0, 119, 139, 0.1);
-            color: var(--secondary);
-            padding: 7px 16px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .hero-main-title {
-            font-size: 3rem;
-            color: var(--primary-dark);
-            margin-bottom: 18px;
-            letter-spacing: -1px;
-        }
-
-        .hero-lead-text {
-            font-size: 1.12rem;
-            color: var(--text-muted);
-            margin-bottom: 30px;
-            line-height: 1.7;
-        }
-
-        .hero-action-buttons {
-            display: flex;
-            gap: 14px;
-            margin-bottom: 35px;
-        }
-
-        .hero-micro-trust {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            border-top: 1px solid var(--border-color);
-            padding-top: 24px;
-        }
-
-        .micro-trust-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: var(--primary-dark);
-        }
-
-        .micro-trust-item i {
-            color: var(--secondary);
-        }
-
-        /* HERO GRAPHIC CARD */
-        .hero-graphic-col {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .glass-pharmacy-card {
-            background: #FFFFFF;
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-lg);
-            padding: 35px;
-            width: 100%;
-            max-width: 440px;
-            border: 1px solid var(--border-color);
-            position: relative;
-            z-index: 2;
-        }
-
-        .card-top-row {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 24px;
-        }
-
-        .pulse-cross-icon {
-            width: 56px;
-            height: 56px;
-            background: linear-gradient(135deg, var(--secondary), var(--primary));
-            color: #FFFFFF;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.4rem;
-            box-shadow: 0 6px 16px rgba(0, 119, 139, 0.3);
-        }
-
-        .card-top-row h3 {
-            font-size: 1.2rem;
-        }
-
-        .card-top-row p {
-            font-size: 0.82rem;
-            color: var(--text-muted);
-        }
-
-        .card-stats-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 14px;
-            margin-bottom: 20px;
-        }
-
-        .stat-box {
-            background-color: var(--bg-alt);
-            padding: 18px;
-            border-radius: var(--radius-sm);
-            text-align: center;
-            border: 1px solid var(--border-color);
-        }
-
-        .stat-num {
-            display: block;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: var(--secondary);
-            margin-bottom: 2px;
-        }
-
-        .stat-label {
-            font-size: 0.8rem;
-            color: var(--text-muted);
-            font-weight: 500;
-        }
-
-        .card-prescription-banner {
-            background-color: rgba(0, 168, 181, 0.1);
-            color: var(--primary);
-            padding: 14px 18px;
-            border-radius: var(--radius-sm);
-            font-size: 0.88rem;
-            font-weight: 700;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .card-prescription-banner i {
-            color: var(--secondary);
-            font-size: 1.1rem;
-        }
-
-        .floating-badge {
-            position: absolute;
-            background: #FFFFFF;
-            padding: 10px 18px;
-            border-radius: 50px;
-            box-shadow: var(--shadow-md);
-            font-size: 0.82rem;
-            font-weight: 700;
-            color: var(--primary-dark);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            z-index: 3;
-            border: 1px solid var(--border-color);
-        }
-
-        .floating-badge i {
-            color: var(--secondary);
-        }
-
-        .badge-top-pos { top: -20px; left: 10px; }
-        .badge-bot-pos { bottom: -20px; right: 10px; }
-
-        /* ================================================= */
-        /* TRUST STRIP BAR                                   */
-        /* ================================================= */
-        .trust-strip-bar {
-            background-color: var(--primary);
-            color: #FFFFFF;
-            padding: 28px 0;
-        }
-
-        .trust-strip-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-
-        .trust-block {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-        }
-
-        .trust-block i {
-            font-size: 2rem;
-            color: var(--accent);
-        }
-
-        .trust-block h4 {
-            font-size: 0.98rem;
-            color: #FFFFFF;
-            margin-bottom: 2px;
-        }
-
-        .trust-block p {
-            font-size: 0.8rem;
-            color: #B0BEC5;
-        }
-
-        /* ================================================= */
-        /* ABOUT SECTION                                     */
-        /* ================================================= */
-        .about-split-grid {
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 50px;
-            align-items: center;
-        }
-
-        .paragraph-text {
-            font-size: 1.05rem;
-            color: var(--text-muted);
-            margin-bottom: 18px;
-            line-height: 1.75;
-        }
-
-        .checklist-stack {
-            margin-top: 25px;
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-        }
-
-        .check-row {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: 600;
-            font-size: 0.98rem;
-            color: var(--primary-dark);
-        }
-
-        .check-row i {
-            width: 24px;
-            height: 24px;
-            background-color: var(--primary-light);
-            color: var(--secondary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-        }
-
-        .premium-trust-box {
-            background: linear-gradient(135deg, var(--bg-alt) 0%, #FFFFFF 100%);
-            border: 1px solid var(--border-color);
-            border-radius: var(--radius-lg);
-            padding: 40px;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .icon-header-box {
-            width: 54px;
-            height: 54px;
-            background-color: var(--primary-light);
-            color: var(--secondary);
-            border-radius: var(--radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.4rem;
-            margin-bottom: 20px;
-        }
-
-        .premium-trust-box h3 {
-            font-size: 1.4rem;
-            margin-bottom: 20px;
-        }
-
-        .bullet-list-check {
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            margin-bottom: 25px;
-        }
-
-        .bullet-list-check li {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: 600;
-            font-size: 0.95rem;
-            color: var(--primary-dark);
-        }
-
-        .bullet-list-check li i {
-            color: var(--secondary);
-        }
-
-        .location-badge-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background-color: var(--primary-dark);
-            color: #FFFFFF;
-            padding: 9px 18px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-        }
-
-        /* ================================================= */
-        /* SERVICES SECTION                                  */
-        /* ================================================= */
-        .services-grid-layout {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-        }
-
-        .service-premium-card {
-            background: #FFFFFF;
-            border-radius: var(--radius-md);
-            padding: 32px 24px;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-        }
-
-        .service-premium-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-md);
-            border-color: var(--secondary);
-        }
-
-        .service-icon-box {
-            width: 52px;
-            height: 52px;
-            background-color: var(--primary-light);
-            color: var(--secondary);
-            border-radius: var(--radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.25rem;
-            margin-bottom: 20px;
-        }
-
-        .service-premium-card h3 {
-            font-size: 1.15rem;
-            margin-bottom: 10px;
-        }
-
-        .service-premium-card p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        /* ================================================= */
-        /* HOW TO ORDER SECTION                              */
-        /* ================================================= */
-        .steps-grid-layout {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 28px;
-            margin-bottom: 45px;
-        }
-
-        .step-card-item {
-            background-color: var(--bg-alt);
-            border-radius: var(--radius-md);
-            padding: 35px 28px;
-            border: 1px solid var(--border-color);
-            position: relative;
-        }
-
-        .step-number-big {
-            font-family: 'Outfit', sans-serif;
-            font-weight: 800;
-            font-size: 2.4rem;
-            color: rgba(0, 119, 139, 0.15);
-            margin-bottom: 14px;
-        }
-
-        .step-card-item h3 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .step-card-item p {
-            font-size: 0.92rem;
-            color: var(--text-muted);
-        }
-
-        .order-bottom-action {
-            max-width: 650px;
-            margin: 0 auto;
-        }
-
-        .legal-disclaimer-text {
-            font-size: 0.85rem;
-            color: var(--text-muted);
-            margin-top: 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-        }
-
-        /* ================================================= */
-        /* PHARMACIST SECTION                                */
-        /* ================================================= */
-        .pharmacist-profile-card {
-            background: #FFFFFF;
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-md);
-            border: 1px solid var(--border-color);
-            display: grid;
-            grid-template-columns: 0.75fr 1.25fr;
-            gap: 45px;
-            padding: 45px;
-            align-items: center;
-        }
-
-        .pharmacist-avatar-col {
-            display: flex;
-            justify-content: center;
-        }
-
-        .avatar-circle-box {
-            width: 210px;
-            height: 210px;
-            background: linear-gradient(135deg, var(--primary-light), var(--bg-alt));
-            border-radius: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: var(--secondary);
-            font-size: 4.8rem;
-            border: 4px solid #FFFFFF;
-            box-shadow: var(--shadow-md);
-            position: relative;
-        }
-
-        .badge-overlay-bpharma {
-            position: absolute;
-            bottom: 12px;
-            background-color: var(--secondary);
-            color: #FFFFFF;
-            font-size: 0.82rem;
-            font-family: 'Outfit', sans-serif;
-            font-weight: 700;
-            padding: 6px 16px;
-            border-radius: 50px;
-            box-shadow: 0 4px 10px rgba(0, 119, 139, 0.3);
-        }
-
-        .badges-row {
-            display: flex;
-            gap: 12px;
-            margin-bottom: 18px;
-            flex-wrap: wrap;
-        }
-
-        .pill-tag {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background-color: var(--primary-light);
-            color: var(--secondary);
-            padding: 6px 14px;
-            border-radius: var(--radius-sm);
-            font-size: 0.88rem;
-            font-weight: 700;
-        }
-
-        .quote-text {
-            font-size: 1.08rem;
-            font-style: italic;
-            color: var(--text-main);
-            margin-bottom: 26px;
-            line-height: 1.65;
-        }
-
-        .pharmacist-features-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 18px;
-        }
-
-        .feat-box {
-            display: flex;
-            gap: 12px;
-            align-items: flex-start;
-        }
-
-        .feat-box i {
-            color: var(--secondary);
-            font-size: 1.2rem;
-            margin-top: 2px;
-        }
-
-        .feat-box h4 {
-            font-size: 0.95rem;
-            margin-bottom: 2px;
-        }
-
-        .feat-box p {
-            font-size: 0.82rem;
-            color: var(--text-muted);
-        }
-
-        /* ================================================= */
-        /* WHY CHOOSE US                                     */
-        /* ================================================= */
-        .why-grid-layout {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-        }
-
-        .why-card-item {
-            background-color: var(--bg-alt);
-            border-radius: var(--radius-md);
-            padding: 35px 22px;
-            text-align: center;
-            border: 1px solid var(--border-color);
-            transition: var(--transition);
-        }
-
-        .why-card-item:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-sm);
-            background-color: #FFFFFF;
-            border-color: var(--secondary);
-        }
-
-        .why-icon-box {
-            width: 58px;
-            height: 58px;
-            background-color: var(--primary-light);
-            color: var(--secondary);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.35rem;
-            margin: 0 auto 20px auto;
-        }
-
-        .why-card-item h3 {
-            font-size: 1.15rem;
-            margin-bottom: 10px;
-        }
-
-        .why-card-item p {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
-
-        /* ================================================= */
-        /* LOCATION & MAP SECTION                            */
-        /* ================================================= */
-        .location-split-grid {
-            display: grid;
-            grid-template-columns: 1fr 1.25fr;
-            gap: 40px;
-            align-items: stretch;
-        }
-
-        .location-card-box {
-            background: #FFFFFF;
-            border-radius: var(--radius-lg);
-            padding: 40px;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border-color);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .location-card-box h3 {
-            font-size: 1.4rem;
-            margin-bottom: 18px;
-        }
-
-        .loc-addr, .loc-phone {
-            display: flex;
-            gap: 14px;
-            font-size: 1.02rem;
-            color: var(--text-main);
-            margin-bottom: 18px;
-            align-items: flex-start;
-        }
-
-        .loc-addr i, .loc-phone i {
-            color: var(--secondary);
-            font-size: 1.15rem;
-            margin-top: 3px;
-        }
-
-        .loc-phone a {
-            color: var(--secondary);
-            font-weight: 700;
-        }
-
-        .location-buttons-stack {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin-top: 25px;
-        }
-
-        .map-frame-box {
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border-color);
-            min-height: 400px;
-        }
-
-        /* ================================================= */
-        /* CONTACT BANNER                                    */
-        /* ================================================= */
-        .contact-banner-gradient {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: #FFFFFF;
-            padding: 70px 0;
-        }
-
-        .contact-banner-gradient h2 {
-            color: #FFFFFF;
-            font-size: 2.3rem;
-            margin-bottom: 12px;
-        }
-
-        .contact-banner-gradient p {
-            font-size: 1.1rem;
-            color: #CFD8DC;
-            max-width: 600px;
-            margin: 0 auto 35px auto;
-        }
-
-        .banner-btns-flex {
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-        }
-
-        /* ================================================= */
-        /* FOOTER                                            */
-        /* ================================================= */
-        .footer-section {
-            background-color: var(--primary-dark);
-            color: #B0BEC5;
-            padding: 70px 0 30px 0;
-        }
-
-        .footer-grid-layout {
-            display: grid;
-            grid-template-columns: 1.3fr 0.8fr 1.1fr;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-brand-id {
-            margin-bottom: 16px;
-        }
-
-        .footer-highlight-text {
-            font-size: 0.95rem;
-            color: #FFFFFF;
-            margin-bottom: 8px;
-            font-weight: 600;
-        }
-
-        .footer-small-muted {
-            font-size: 0.85rem;
-            color: #90A4AE;
-        }
-
-        .footer-col-links h4, .footer-col-contact h4 {
-            color: #FFFFFF;
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-        }
-
-        .footer-nav-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .footer-nav-list a {
-            color: #B0BEC5;
-            font-size: 0.95rem;
-        }
-
-        .footer-nav-list a:hover {
-            color: var(--accent);
-            padding-left: 4px;
-        }
-
-        .footer-col-contact p {
-            display: flex;
-            gap: 12px;
-            font-size: 0.92rem;
-            margin-bottom: 16px;
-            align-items: flex-start;
-        }
-
-        .footer-col-contact p i {
-            color: var(--accent);
-            margin-top: 3px;
-        }
-
-        .footer-col-contact a {
-            color: #B0BEC5;
-        }
-
-        .footer-col-contact a:hover {
-            color: var(--accent);
-        }
-
-        .footer-wa-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background-color: #25D366;
-            color: #FFFFFF !important;
-            padding: 8px 16px;
-            border-radius: var(--radius-sm);
-            font-weight: 700;
-            font-size: 0.9rem;
-            margin-top: 6px;
-        }
-
-        .footer-legal-disclaimer {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 20px 0;
-            margin-bottom: 24px;
-            font-size: 0.85rem;
-            color: #90A4AE;
-            line-height: 1.65;
-        }
-
-        .footer-bottom-row {
-            text-align: center;
-            font-size: 0.85rem;
-            color: #90A4AE;
-        }
-
-        /* ================================================= */
-        /* FLOATING WHATSAPP & MOBILE DOCK                   */
-        /* ================================================= */
-        .floating-whatsapp-btn {
-            position: fixed;
-            bottom: 90px;
-            right: 22px;
-            width: 60px;
-            height: 60px;
-            background-color: #25D366;
-            color: #FFFFFF;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.9rem;
-            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.45);
-            z-index: 999;
-            transition: var(--transition);
-        }
-
-        .floating-whatsapp-btn:hover {
-            transform: scale(1.1);
-        }
-
-        .floating-whatsapp-btn .tooltip-box {
-            position: absolute;
-            right: 70px;
-            background-color: var(--primary-dark);
-            color: #FFFFFF;
-            padding: 7px 14px;
-            border-radius: var(--radius-sm);
-            font-size: 0.8rem;
-            font-weight: 700;
-            white-space: nowrap;
-            opacity: 0;
-            pointer-events: none;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .floating-whatsapp-btn:hover .tooltip-box {
-            opacity: 1;
-        }
-
-        /* MOBILE STICKY BOTTOM DOCK */
-        .mobile-sticky-dock {
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #FFFFFF;
-            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.12);
-            z-index: 998;
-            grid-template-columns: repeat(3, 1fr);
-            padding: 10px;
-            gap: 10px;
-            border-top: 1px solid var(--border-color);
-        }
-
-        .dock-btn {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 4px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 8px 4px;
-            border-radius: var(--radius-sm);
-            text-align: center;
-        }
-
-        .dock-btn i {
-            font-size: 1.15rem;
-        }
-
-        .dock-call {
-            background-color: var(--primary-light);
-            color: var(--primary);
-        }
-
-        .dock-whatsapp {
-            background-color: #25D366;
-            color: #FFFFFF;
-        }
-
-        .dock-map {
-            background-color: var(--bg-alt);
-            color: var(--primary-dark);
-        }
-
-        /* ================================================= */
-        /* RESPONSIVE DESIGN (MOBILE FIRST)                  */
-        /* ================================================= */
-        @media (max-width: 1024px) {
-            .hero-main-title { font-size: 2.4rem; }
-            .services-grid-layout, .why-grid-layout { grid-template-columns: repeat(2, 1fr); }
-            .trust-strip-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
-            .steps-grid-layout { grid-template-columns: 1fr; }
-            .footer-grid-layout { grid-template-columns: 1fr 1fr; }
-        }
-
-
-        body.menu-open {
-            overflow: hidden;
-        }
-
-        @media (max-width: 768px) {
-            .top-announcement-bar { display: none; }
-            .desktop-only-btn { display: none; }
-            .hamburger-menu-btn { display: block; }
-
-            /* Mobile Navigation Drawer */
-            .nav-drawer {
-                position: fixed;
-                top: 0;
-                right: -100%;
-                width: 85%;
-                max-width: 350px;
-                height: 100vh;
-                background-color: #FFFFFF;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: flex-start;
-                padding: 25px 22px;
-                transition: var(--transition);
-                box-shadow: -15px 0 40px rgba(0,0,0,0.18);
-                z-index: 1005;
-                overflow-y: auto;
-            }
-            
-            .nav-drawer.active {
-                right: 0;
-            }
-
-            .drawer-header {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-                border-bottom: 1px solid var(--border-color);
-                padding-bottom: 16px;
-                margin-bottom: 22px;
-            }
-
-            .drawer-title {
-                font-family: 'Outfit', sans-serif;
-                font-weight: 700;
-                font-size: 1.2rem;
-            }
-
-            .drawer-close {
-                background: var(--bg-alt);
-                border: none;
-                width: 36px;
-                height: 36px;
-                border-radius: 50%;
-                font-size: 1.1rem;
-                cursor: pointer;
-                color: var(--text-muted);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .nav-links-list {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 18px;
-                width: 100%;
-            }
-
-            .nav-link {
-                font-size: 1.12rem;
-                width: 100%;
-                padding: 6px 0;
-                border-bottom: 1px solid var(--border-color);
-            }
-
-            .drawer-footer-cta {
-                display: block;
-                width: 100%;
-                margin-top: 35px;
-            }
-
-            /* Stack Grids */
-            .hero-grid, .about-split-grid, .pharmacist-profile-card, .location-split-grid {
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
-
-            .hero-main-title { font-size: 2.1rem; }
-            .hero-graphic-col { order: -1; }
-            .trust-strip-grid { grid-template-columns: 1fr; }
-            .services-grid-layout, .why-grid-layout { grid-template-columns: 1fr; }
-            .pharmacist-profile-card { padding: 30px 20px; }
-            .footer-grid-layout { grid-template-columns: 1fr; gap: 30px; }
-
-            /* Enable mobile bottom dock & WhatsApp positioning */
-            .mobile-sticky-dock { display: grid; }
-            body { padding-bottom: 74px; }
-            .floating-whatsapp-btn { bottom: 84px; right: 16px; width: 54px; height: 54px; font-size: 1.7rem; }
-        }
-
-        /* =========================================================
-           MOBILE UX UPGRADE
-           Optimized for phones from 320px to 768px
-           ========================================================= */
-        html {
-            scroll-padding-top: 82px;
-            -webkit-text-size-adjust: 100%;
-        }
-
-        body {
-            min-width: 0;
-            overflow-x: hidden;
-        }
-
-        .container {
-            width: 100%;
-        }
-
-        .btn,
-        .hamburger-menu-btn,
-        .drawer-close,
-        .dock-btn {
-            -webkit-tap-highlight-color: transparent;
-            touch-action: manipulation;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding-bottom: calc(76px + env(safe-area-inset-bottom));
-            }
-
-            .container {
-                padding-left: 16px;
-                padding-right: 16px;
-            }
-
-            .section-padding {
-                padding: 56px 0;
-            }
-
-            .section-heading {
-                font-size: 1.78rem;
-                line-height: 1.2;
-                letter-spacing: -0.35px;
-            }
-
-            .section-subtext {
-                font-size: 0.94rem;
-                line-height: 1.6;
-                margin-bottom: 28px;
-            }
-
-            .btn {
-                min-height: 48px;
-                padding: 12px 18px;
-            }
-
-            /* Header */
-            .header-nav {
-                padding: 9px 0;
-            }
-
-            .nav-container {
-                min-height: 48px;
-            }
-
-            .brand-identity {
-                min-width: 0;
-                gap: 9px;
-            }
-
-            .brand-icon-box {
-                width: 40px;
-                height: 40px;
-                flex: 0 0 40px;
-                border-radius: 11px;
-                font-size: 1rem;
-            }
-
-            .brand-title {
-                font-size: 1rem;
-                line-height: 1.15;
-            }
-
-            .brand-subtitle {
-                font-size: 0.68rem;
-                line-height: 1.2;
-            }
-
-            .hamburger-menu-btn {
-                width: 44px;
-                height: 44px;
-                flex: 0 0 44px;
-            }
-
-            /* Mobile drawer */
-            .nav-drawer {
-                width: min(88vw, 360px);
-                max-width: none;
-                padding:
-                    calc(18px + env(safe-area-inset-top))
-                    20px
-                    calc(24px + env(safe-area-inset-bottom));
-                border-radius: 18px 0 0 18px;
-            }
-
-            .nav-links-list {
-                gap: 8px;
-            }
-
-            .nav-link {
-                font-size: 1rem;
-                min-height: 48px;
-                display: flex;
-                align-items: center;
-                border-radius: 10px;
-                padding: 8px 10px;
-            }
-
-            .nav-link::after {
-                display: none;
-            }
-
-            .nav-link.active {
-                background: var(--primary-light);
-            }
-
-            .drawer-footer-cta {
-                margin-top: 24px;
-            }
-
-            /* Hero */
-            .hero-section {
-                padding: 32px 0 48px;
-            }
-
-            .hero-grid {
-                gap: 26px;
-            }
-
-            .hero-graphic-col {
-                order: -1;
-                width: 100%;
-                padding: 10px 2px 12px;
-            }
-
-            .glass-pharmacy-card {
-                max-width: none;
-                padding: 22px 18px;
-                border-radius: 20px;
-            }
-
-            .card-top-row {
-                gap: 12px;
-                margin-bottom: 18px;
-            }
-
-            .pulse-cross-icon {
-                width: 48px;
-                height: 48px;
-                flex: 0 0 48px;
-                font-size: 1.2rem;
-            }
-
-            .card-top-row h3 {
-                font-size: 1.05rem;
-            }
-
-            .card-top-row p {
-                font-size: 0.74rem;
-            }
-
-            .card-stats-grid {
-                gap: 10px;
-                margin-bottom: 12px;
-            }
-
-            .stat-box {
-                padding: 14px 8px;
-            }
-
-            .stat-num {
-                font-size: 1rem;
-            }
-
-            .stat-label {
-                font-size: 0.72rem;
-            }
-
-            .card-prescription-banner {
-                padding: 11px 12px;
-                font-size: 0.78rem;
-                gap: 8px;
-            }
-
-            .floating-badge {
-                position: static;
-                width: fit-content;
-                max-width: 100%;
-                font-size: 0.72rem;
-                padding: 7px 11px;
-                margin-top: 8px;
-            }
-
-            .badge-top-pos,
-            .badge-bot-pos {
-                position: static;
-            }
-
-            .hero-text-col {
-                width: 100%;
-            }
-
-            .pill-badge {
-                max-width: 100%;
-                font-size: 0.68rem;
-                padding: 6px 11px;
-                margin-bottom: 14px;
-            }
-
-            .hero-main-title {
-                font-size: clamp(1.85rem, 8vw, 2.25rem);
-                line-height: 1.12;
-                letter-spacing: -0.7px;
-                margin-bottom: 14px;
-            }
-
-            .hero-lead-text {
-                font-size: 0.96rem;
-                line-height: 1.6;
-                margin-bottom: 22px;
-            }
-
-            .hero-action-buttons {
-                flex-direction: column;
-                gap: 10px;
-                margin-bottom: 24px;
-            }
-
-            .hero-action-buttons .btn {
-                width: 100%;
-            }
-
-            .hero-micro-trust {
-                display: grid;
-                grid-template-columns: 1fr;
-                gap: 10px;
-                padding-top: 18px;
-            }
-
-            .micro-trust-item {
-                font-size: 0.82rem;
-            }
-
-            /* Trust strip */
-            .trust-strip-bar {
-                padding: 20px 0;
-            }
-
-            .trust-strip-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: 10px;
-            }
-
-            .trust-block {
-                gap: 9px;
-                align-items: flex-start;
-                min-width: 0;
-            }
-
-            .trust-block i {
-                font-size: 1.25rem;
-                flex: 0 0 auto;
-            }
-
-            .trust-block h4 {
-                font-size: 0.78rem;
-                line-height: 1.25;
-            }
-
-            .trust-block p {
-                font-size: 0.68rem;
-                line-height: 1.35;
-            }
-
-            /* About */
-            .about-split-grid,
-            .location-split-grid {
-                gap: 26px;
-            }
-
-            .paragraph-text {
-                font-size: 0.94rem;
-                line-height: 1.65;
-                margin-bottom: 14px;
-            }
-
-            .checklist-stack {
-                gap: 11px;
-                margin-top: 20px;
-            }
-
-            .check-row {
-                font-size: 0.88rem;
-                align-items: flex-start;
-            }
-
-            .premium-trust-box,
-            .location-card-box {
-                padding: 24px 20px;
-                border-radius: 20px;
-            }
-
-            .premium-trust-box h3 {
-                font-size: 1.2rem;
-            }
-
-            /* Services / cards */
-            .services-grid-layout,
-            .why-grid-layout {
-                grid-template-columns: 1fr;
-                gap: 12px;
-            }
-
-            .service-premium-card {
-                padding: 20px 18px;
-                border-radius: 16px;
-                display: grid;
-                grid-template-columns: 46px 1fr;
-                column-gap: 14px;
-                align-items: start;
-            }
-
-            .service-icon-box {
-                width: 46px;
-                height: 46px;
-                grid-row: span 2;
-                margin-bottom: 0;
-            }
-
-            .service-premium-card h3 {
-                font-size: 1rem;
-                margin-bottom: 4px;
-            }
-
-            .service-premium-card p {
-                font-size: 0.82rem;
-                line-height: 1.5;
-            }
-
-            .why-card-item {
-                padding: 22px 18px;
-            }
-
-            /* How to order */
-            .steps-grid-layout {
-                gap: 12px;
-                margin-bottom: 28px;
-            }
-
-            .step-card-item {
-                padding: 22px 18px;
-                border-radius: 16px;
-            }
-
-            .step-number-big {
-                font-size: 1.9rem;
-                margin-bottom: 8px;
-            }
-
-            .step-card-item h3 {
-                font-size: 1.05rem;
-            }
-
-            .step-card-item p {
-                font-size: 0.84rem;
-                line-height: 1.5;
-            }
-
-            .legal-disclaimer-text {
-                font-size: 0.72rem;
-                line-height: 1.5;
-                align-items: flex-start;
-                text-align: left;
-            }
-
-            /* Pharmacist */
-            .pharmacist-profile-card {
-                padding: 24px 18px;
-                gap: 24px;
-                border-radius: 20px;
-            }
-
-            .avatar-circle-box {
-                width: 150px;
-                height: 150px;
-                font-size: 3.3rem;
-            }
-
-            .badge-overlay-bpharma {
-                font-size: 0.72rem;
-                padding: 5px 12px;
-            }
-
-            .quote-text {
-                font-size: 0.94rem;
-                line-height: 1.55;
-                margin-bottom: 20px;
-            }
-
-            .pharmacist-features-grid {
-                grid-template-columns: 1fr;
-                gap: 13px;
-            }
-
-            .feat-box h4 {
-                font-size: 0.88rem;
-            }
-
-            .feat-box p {
-                font-size: 0.76rem;
-            }
-
-            /* Location */
-            .loc-addr,
-            .loc-phone {
-                font-size: 0.9rem;
-                gap: 10px;
-                margin-bottom: 14px;
-            }
-
-            .location-buttons-stack {
-                margin-top: 18px;
-                gap: 9px;
-            }
-
-            .map-frame-box {
-                min-height: 280px;
-                height: 280px;
-                border-radius: 18px;
-            }
-
-            .map-frame-box iframe {
-                display: block;
-                width: 100%;
-                height: 100%;
-                min-height: 280px;
-            }
-
-            /* Contact */
-            .contact-banner-gradient {
-                padding: 52px 0;
-            }
-
-            .contact-banner-gradient h2 {
-                font-size: 1.75rem;
-            }
-
-            .contact-banner-gradient p {
-                font-size: 0.92rem;
-                line-height: 1.55;
-                margin-bottom: 24px;
-            }
-
-            .banner-btns-flex {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .banner-btns-flex .btn {
-                width: 100%;
-            }
-
-            /* Footer */
-            .footer-section {
-                padding: 50px 0 24px;
-            }
-
-            .footer-grid-layout {
-                gap: 28px;
-                margin-bottom: 28px;
-            }
-
-            .footer-col-links h4,
-            .footer-col-contact h4 {
-                font-size: 1rem;
-                margin-bottom: 13px;
-            }
-
-            .footer-nav-list {
-                gap: 9px;
-            }
-
-            .footer-nav-list a,
-            .footer-col-contact p {
-                font-size: 0.82rem;
-            }
-
-            .footer-legal-disclaimer {
-                font-size: 0.72rem;
-                padding: 16px 0;
-                margin-bottom: 18px;
-            }
-
-            .footer-bottom-row {
-                font-size: 0.72rem;
-                line-height: 1.5;
-            }
-
-            /* Floating actions */
-            .floating-whatsapp-btn {
-                width: 52px;
-                height: 52px;
-                right: 14px;
-                bottom: calc(84px + env(safe-area-inset-bottom));
-                font-size: 1.55rem;
-            }
-
-            .floating-whatsapp-btn .tooltip-box {
-                display: none;
-            }
-
-            .mobile-sticky-dock {
-                padding:
-                    7px
-                    8px
-                    calc(7px + env(safe-area-inset-bottom));
-                gap: 7px;
-            }
-
-            .dock-btn {
-                min-height: 52px;
-                padding: 6px 3px;
-                font-size: 0.68rem;
-                border-radius: 11px;
-            }
-
-            .dock-btn i {
-                font-size: 1.05rem;
-            }
-
-            /* Remove hover movement on touch devices */
-            .service-premium-card:hover,
-            .why-card-item:hover,
-            .btn-primary:hover,
-            .btn-whatsapp:hover,
-            .floating-whatsapp-btn:hover {
-                transform: none;
-            }
-        }
-
-        @media (max-width: 380px) {
-            .container {
-                padding-left: 13px;
-                padding-right: 13px;
-            }
-
-            .brand-title {
-                font-size: 0.94rem;
-            }
-
-            .brand-subtitle {
-                font-size: 0.63rem;
-            }
-
-            .hero-main-title {
-                font-size: 1.78rem;
-            }
-
-            .hero-lead-text {
-                font-size: 0.9rem;
-            }
-
-            .trust-strip-grid {
-                gap: 8px;
-            }
-
-            .trust-block {
-                gap: 7px;
-            }
-
-            .trust-block h4 {
-                font-size: 0.72rem;
-            }
-
-            .trust-block p {
-                font-size: 0.62rem;
-            }
-
-            .glass-pharmacy-card {
-                padding: 18px 14px;
-            }
-
-            .card-stats-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .service-premium-card {
-                grid-template-columns: 42px 1fr;
-                column-gap: 11px;
-                padding: 17px 14px;
-            }
-
-            .service-icon-box {
-                width: 42px;
-                height: 42px;
-            }
-
-            .dock-btn {
-                min-height: 50px;
-                font-size: 0.63rem;
-            }
-        }
-
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sharma Medical Store Khanna | Licensed Pharmacy Near Raj Hospital</title>
+<meta name="description" content="Sharma Medical Store in Khanna near Raj Hospital, Lalheri Road. Licensed pharmacy offering genuine medicines, healthcare products, prescription medicines and convenient WhatsApp ordering.">
+<link rel="canonical" href="https://sharma-medical-store.netlify.app/">
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Sharma Medical Store Khanna | Licensed Pharmacy Near Raj Hospital">
+<meta property="og:description" content="Genuine medicines, ethical pharmacy practices, and professional healthcare support in Khanna. Order on WhatsApp or call us directly.">
+<meta property="og:url" content="https://sharma-medical-store.netlify.app/">
+<meta property="og:locale" content="en_IN">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Pharmacy",
+  "name": "Sharma Medical Store",
+  "image": "https://sharma-medical-store.netlify.app/og-image.jpg",
+  "telephone": "+916284514807",
+  "priceRange": "₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Near Raj Hospital, Lalheri Road",
+    "addressLocality": "Khanna",
+    "addressRegion": "Punjab",
+    "postalCode": "141401",
+    "addressCountry": "IN"
+  },
+  "url": "https://sharma-medical-store.netlify.app/",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+  }
+}
+</script>
+<style>
+:root {
+  --primary: #0284c7;
+  --primary-dark: #0369a1;
+  --primary-light: #e0f2fe;
+  --success: #10b981;
+  --success-light: #ecfdf5;
+  --surface: #ffffff;
+  --bg: #f8fafc;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --border: #cbd5e1;
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 10px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
+  --bottombar-h: 76px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text-main);
+  background: var(--bg);
+  line-height: 1.6;
+  padding-bottom: calc(var(--bottombar-h) + env(safe-area-inset-bottom, 0px));
+}
+
+h1, h2, h3, .font-display { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
+h1, h2, h3 { color: var(--text-main); line-height: 1.25; margin: 0; }
+p { margin: 0; }
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+section { padding: 50px 0; }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--success);
+  background: var(--success-light);
+  padding: 6px 14px;
+  border-radius: 99px;
+  margin-bottom: 16px;
+}
+
+.section-head { margin-bottom: 32px; max-width: 600px; }
+.section-head h2 { font-size: clamp(26px, 5vw, 34px); font-weight: 800; }
+.section-head p { color: var(--text-muted); margin-top: 8px; font-size: 16px; }
+
+:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+.btn:active { transform: scale(0.98); }
+.btn-primary { background: var(--success); color: #fff; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25); }
+.btn-primary:hover { background: #059669; }
+.btn-outline { background: var(--surface); color: var(--text-main); border: 1.5px solid var(--border); }
+.btn-outline:hover { border-color: var(--primary); background: var(--primary-light); color: var(--primary-dark); }
+.btn-call { background: var(--primary); color: #fff; box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25); }
+.btn-call:hover { background: var(--primary-dark); }
+
+.btn-row { display: flex; flex-direction: column; gap: 12px; }
+@media(min-width: 480px) { .btn-row { flex-direction: row; } .btn { width: auto; flex: 1; } }
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+.header-inner { display: flex; align-items: center; justify-content: space-between; padding: 14px 20px; max-width: 1120px; margin: 0 auto; }
+.brand { display: flex; flex-direction: column; }
+.brand-name { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 18px; color: var(--text-main); display: flex; align-items: center; gap: 6px; }
+.brand-name::before { content: '✚'; color: var(--primary); font-size: 16px; }
+.brand-sub { font-size: 12px; color: var(--text-muted); font-weight: 500; }
+
+.hamburger {
+  width: 44px; height: 44px; border-radius: var(--radius-sm); border: 1.5px solid var(--border);
+  background: var(--surface); display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 5px; cursor: pointer; flex-shrink: 0;
+}
+.hamburger span { width: 20px; height: 2px; background: var(--text-main); border-radius: 2px; }
+.desktop-nav { display: none; }
+
+/* Drawer */
+.backdrop { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.5); z-index: 49; opacity: 0; visibility: hidden; transition: 0.3s; }
+.backdrop.open { opacity: 1; visibility: visible; }
+.drawer {
+  position: fixed; top: 0; right: 0; height: 100%; width: min(85vw, 340px);
+  background: #fff; z-index: 50; transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex; flex-direction: column; box-shadow: -10px 0 30px rgba(0,0,0,0.1);
+}
+.drawer.open { transform: translateX(0); }
+.drawer-head { display: flex; justify-content: space-between; align-items: center; padding: 20px; border-bottom: 1px solid var(--border); }
+.drawer-head span { font-weight: 800; font-size: 17px; font-family: 'Plus Jakarta Sans', sans-serif; }
+.drawer-close { width: 40px; height: 40px; border-radius: var(--radius-sm); border: 1.5px solid var(--border); background: #fff; font-size: 18px; cursor: pointer; }
+.drawer nav { display: flex; flex-direction: column; padding: 12px; overflow-y: auto; gap: 4px; }
+.drawer nav a { padding: 14px 16px; font-weight: 600; font-size: 16px; border-radius: var(--radius-sm); color: var(--text-main); }
+.drawer nav a:hover { background: var(--primary-light); color: var(--primary-dark); }
+.drawer-cta { padding: 20px; border-top: 1px solid var(--border); margin-top: auto; }
+
+/* Bottom Action Bar */
+.bottom-bar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 45;
+  display: grid; grid-template-columns: 1fr 1fr 1.2fr;
+  background: #fff; border-top: 1px solid var(--border);
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px));
+  gap: 8px; box-shadow: 0 -4px 20px rgba(15,23,42,0.08);
+}
+.bar-btn {
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  min-height: 50px; border-radius: var(--radius-sm); font-weight: 700; font-size: 13px; gap: 2px;
+}
+.bar-btn small { font-weight: 500; font-size: 11px; opacity: 0.9; }
+.bar-call { background: var(--primary-light); color: var(--primary-dark); border: 1px solid rgba(2,132,199,0.2); }
+.bar-wa { background: var(--success); color: #fff; }
+.bar-rx { background: var(--text-main); color: #fff; grid-column: span 1; }
+
+@media(min-width: 1024px) { .bottom-bar { display: none; } }
+
+/* Hero Section */
+.hero { padding: 40px 0 60px; background: linear-gradient(180deg, var(--primary-light) 0%, rgba(248,250,252,0) 100%); }
+.hero h1 { font-size: clamp(32px, 7vw, 50px); font-weight: 800; letter-spacing: -0.02em; color: var(--text-main); }
+.hero p.lead { margin-top: 16px; color: var(--text-muted); font-size: 17px; max-width: 50ch; }
+.hero .btn-row { margin-top: 28px; }
+
+.trust-badges { display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 32px; }
+.trust-item {
+  display: flex; align-items: center; gap: 12px; background: var(--surface);
+  padding: 14px 18px; border-radius: var(--radius-sm); border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm); font-weight: 600; font-size: 14px;
+}
+.trust-item span { width: 28px; height: 28px; background: var(--success-light); color: var(--success); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+@media(min-width: 640px) { .trust-badges { grid-template-columns: repeat(3, 1fr); } }
+
+/* Cards & Grids */
+.grid { display: grid; gap: 16px; grid-template-columns: 1fr; }
+@media(min-width: 560px) { .grid-2 { grid-template-columns: repeat(2, 1fr); } }
+@media(min-width: 860px) { .grid-4 { grid-template-columns: repeat(4, 1fr); } .grid-3 { grid-template-columns: repeat(3, 1fr); } }
+
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: 24px; box-shadow: var(--shadow-sm); transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--primary); }
+.card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; color: var(--text-main); }
+.card p { font-size: 14.5px; color: var(--text-muted); }
+
+.icon-box {
+  width: 48px; height: 48px; border-radius: var(--radius-sm); background: var(--primary-light);
+  color: var(--primary); display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 16px;
+}
+
+/* Steps (How to order) */
+.step-list { display: flex; flex-direction: column; gap: 16px; }
+.step-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md);
+  padding: 20px 24px; display: flex; gap: 20px; align-items: flex-start; box-shadow: var(--shadow-sm);
+}
+.step-number {
+  width: 42px; height: 42px; background: var(--text-main); color: #fff; border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; flex-shrink: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.step-card h3 { font-size: 17px; margin-bottom: 4px; }
+.step-card p { font-size: 14.5px; color: var(--text-muted); }
+
+/* Pharmacist Section */
+.pharmacist-box {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 32px; box-shadow: var(--shadow-md); display: grid; gap: 24px;
+}
+.pharm-header { display: flex; gap: 20px; align-items: center; }
+.pharm-avatar {
+  width: 72px; height: 72px; border-radius: 50%; background: var(--primary); color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 24px; font-weight: 800;
+  font-family: 'Plus Jakarta Sans', sans-serif; flex-shrink: 0; box-shadow: 0 4px 14px rgba(2, 132, 199, 0.3);
+}
+.pharm-info h3 { font-size: 20px; font-weight: 800; color: var(--text-main); }
+.pharm-info p { font-size: 14px; color: var(--text-muted); margin-top: 2px; }
+.pharm-quote { font-size: 16px; font-style: italic; color: var(--text-main); border-left: 4px solid var(--success); padding-left: 16px; line-height: 1.5; }
+
+/* Contact Section */
+.contact-card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
+  padding: 32px; box-shadow: var(--shadow-md);
+}
+.contact-item { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 20px; }
+.contact-icon {
+  width: 44px; height: 44px; border-radius: var(--radius-sm); background: var(--primary-light); color: var(--primary);
+  display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0;
+}
+.contact-item strong { display: block; font-size: 16px; color: var(--text-main); margin-bottom: 2px; }
+.contact-item span { font-size: 15px; color: var(--text-muted); }
+
+.map-container { border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); margin-top: 24px; }
+.map-container iframe { width: 100%; height: 280px; border: 0; display: block; }
+
+/* Footer */
+footer { background: #0f172a; color: #94a3b8; padding: 60px 0 30px; font-size: 14px; }
+.footer-grid { display: grid; gap: 36px; }
+footer h4 { color: #fff; font-size: 16px; margin-bottom: 16px; }
+.footer-brand strong { color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; }
+footer ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+footer a:hover { color: #fff; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; padding-top: 20px; display: flex; flex-direction: column; gap: 12px; font-size: 13px; }
+
+@media(min-width: 860px) {
+  .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+  .footer-bottom { flex-direction: row; justify-content: space-between; }
+}
+
+@media(min-width: 1024px) {
+  .hamburger { display: none; }
+  .desktop-nav { display: flex; gap: 28px; align-items: center; }
+  .desktop-nav a { font-weight: 600; font-size: 15px; color: var(--text-main); }
+  .desktop-nav a:hover { color: var(--primary); }
+  .desktop-nav .btn { width: auto; min-height: 44px; padding: 10px 20px; font-size: 14px; }
+  section { padding: 70px 0; }
+  .hero { padding: 60px 0 80px; }
+}
+</style>
 </head>
 <body>
 
-    <!-- TOP ANNOUNCEMENT BAR -->
-    <div class="top-announcement-bar">
-        <div class="container bar-flex">
-            <div class="bar-item"><i class="fas fa-map-marker-alt"></i> Near Raj Hospital, Lalheri Road, Khanna</div>
-            <div class="bar-item hide-mobile"><i class="fas fa-shield-alt"></i> 100% Licensed & Verified Pharmacy</div>
-            <a href="tel:+916284514807" class="bar-item highlight-phone"><i class="fas fa-phone-alt"></i> +91 6284514807</a>
-        </div>
+<header class="site-header">
+  <div class="header-inner">
+    <div class="brand">
+      <span class="brand-name">Sharma Medical Store</span>
+      <span class="brand-sub">Licensed Pharmacy • Khanna</span>
     </div>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#order">How to Order</a>
+      <a href="#pharmacist">Pharmacist</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary" href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener">WhatsApp Order</a>
+    </nav>
+    <button class="hamburger" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
-    <!-- STICKY NAVBAR -->
-    <header class="header-nav" id="navbar">
-        <div class="container nav-container">
-            <a href="#home" class="brand-identity">
-                <div class="brand-icon-box">
-                    <i class="fas fa-plus"></i>
-                </div>
-                <div class="brand-titles">
-                    <span class="brand-title">Sharma Medical</span>
-                    <span class="brand-subtitle">Store • Khanna</span>
-                </div>
-            </a>
+<div class="backdrop" id="backdrop"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+  <div class="drawer-head">
+    <span>Menu</span>
+    <button class="drawer-close" id="drawerClose" aria-label="Close menu">✕</button>
+  </div>
+  <nav>
+    <a href="#main" data-close>Home</a>
+    <a href="#about" data-close>About Us</a>
+    <a href="#services" data-close>Services & Products</a>
+    <a href="#order" data-close>Order on WhatsApp</a>
+    <a href="#pharmacist" data-close>Our Pharmacist</a>
+    <a href="#contact" data-close>Location & Contact</a>
+  </nav>
+  <div class="drawer-cta">
+    <a class="btn btn-primary" href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener">💬 WhatsApp Order</a>
+  </div>
+</aside>
 
-            <nav class="nav-drawer" id="navDrawer">
-                <div class="drawer-header">
-                    <span class="drawer-title">Menu</span>
-                    <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
-                </div>
-                <ul class="nav-links-list">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#order" class="nav-link">How to Order</a></li>
-                    <li><a href="#pharmacist" class="nav-link">Pharmacist</a></li>
-                    <li><a href="#why-us" class="nav-link">Why Us</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="drawer-footer-cta">
-                    <a href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20would%20like%20to%20place%20an%20order." target="_blank" class="btn btn-primary btn-block">
-                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
-                    </a>
-                </div>
-            </nav>
+<main id="main">
 
-            <div class="nav-actions-right">
-                <a href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20would%20like%20to%20place%20an%20order." target="_blank" class="btn btn-primary desktop-only-btn">
-                    <i class="fab fa-whatsapp"></i> Quick WhatsApp
-                </a>
-                <button class="hamburger-menu-btn" id="hamburgerBtn" aria-label="Toggle Navigation">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="hero-section" id="home">
-        <div class="container hero-grid">
-            <div class="hero-text-col">
-                <div class="pill-badge">
-                    <i class="fas fa-certificate"></i> LICENSED PHARMACY • PROFESSIONAL CARE
-                </div>
-                <h1 class="hero-main-title">Trusted Medical Store in Khanna</h1>
-                <p class="hero-lead-text">
-                    Genuine medicines, ethical pharmacy practices, and professional healthcare support for your family's daily wellness.
-                </p>
-                <div class="hero-action-buttons">
-                    <a href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20would%20like%20to%20place%20an%20order." target="_blank" class="btn btn-primary btn-xl">
-                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
-                    </a>
-                    <a href="https://www.google.com/maps?q=Sharma%20Medical%20Store%20Khanna" target="_blank" class="btn btn-glass btn-xl">
-                        <i class="fas fa-directions"></i> Get Directions
-                    </a>
-                </div>
-                <div class="hero-micro-trust">
-                    <div class="micro-trust-item"><i class="fas fa-check-circle"></i> Genuine Medicines</div>
-                    <div class="micro-trust-item"><i class="fas fa-check-circle"></i> Qualified Pharmacist</div>
-                    <div class="micro-trust-item"><i class="fas fa-check-circle"></i> Patient-Focused Care</div>
-                </div>
-            </div>
-
-            <div class="hero-graphic-col">
-                <div class="glass-pharmacy-card">
-                    <div class="card-top-row">
-                        <div class="pulse-cross-icon"><i class="fas fa-plus"></i></div>
-                        <div>
-                            <h3>Sharma Medical Store</h3>
-                            <p>Supervised Healthcare Delivery</p>
-                        </div>
-                    </div>
-                    <div class="card-stats-grid">
-                        <div class="stat-box">
-                            <span class="stat-num">B.Pharma</span>
-                            <span class="stat-label">Qualified Care</span>
-                        </div>
-                        <div class="stat-box">
-                            <span class="stat-num">Verified</span>
-                            <span class="stat-label">Licensed Shop</span>
-                        </div>
-                    </div>
-                    <div class="card-prescription-banner">
-                        <i class="fas fa-file-prescription"></i> Valid Prescriptions Honored Safely
-                    </div>
-                </div>
-                <!-- Floating Badges -->
-                <div class="floating-badge badge-top-pos">
-                    <i class="fas fa-shield-alt"></i> 100% Authentic
-                </div>
-                <div class="floating-badge badge-bot-pos">
-                    <i class="fas fa-map-marker-alt"></i> Near Raj Hospital
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TRUST STRIP -->
-    <div class="trust-strip-bar">
-        <div class="container trust-strip-grid">
-            <div class="trust-block">
-                <i class="fas fa-clinic-medical"></i>
-                <div>
-                    <h4>Licensed Pharmacy</h4>
-                    <p>Fully certified & regulated</p>
-                </div>
-            </div>
-            <div class="trust-block">
-                <i class="fas fa-user-graduate"></i>
-                <div>
-                    <h4>B.Pharma Pharmacist</h4>
-                    <p>Expert professional oversight</p>
-                </div>
-            </div>
-            <div class="trust-block">
-                <i class="fas fa-pills"></i>
-                <div>
-                    <h4>Genuine Medicines</h4>
-                    <p>Sourced from reliable channels</p>
-                </div>
-            </div>
-            <div class="trust-block">
-                <i class="fas fa-hands-holding-child"></i>
-                <div>
-                    <h4>Patient Safety</h4>
-                    <p>Ethical dispensing practices</p>
-                </div>
-            </div>
-        </div>
+<section class="hero">
+  <div class="container">
+    <span class="badge">✓ Licensed & Regulated Pharmacy</span>
+    <h1>Your Trusted Health Partner in Khanna</h1>
+    <p class="lead">Providing genuine medicines, expert pharmaceutical guidance, and reliable doorstep healthcare support near Raj Hospital.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener">💬 Order on WhatsApp</a>
+      <a class="btn btn-outline" href="https://www.google.com/maps?q=Sharma%20Medical%20Store%20Khanna" target="_blank" rel="noopener">📍 Get Directions</a>
     </div>
-
-    <!-- ABOUT SECTION -->
-    <section class="about-section section-padding" id="about">
-        <div class="container">
-            <div class="about-split-grid">
-                <div class="about-text-content">
-                    <span class="section-badge-tag"><i class="fas fa-info-circle"></i> About Our Pharmacy</span>
-                    <h2 class="section-heading">Your Trusted Local Pharmacy</h2>
-                    <p class="paragraph-text">
-                        Sharma Medical Store is a licensed and professionally managed pharmacy located near Raj Hospital, Khanna. We are committed to patient safety, quality medicines, and responsible pharmaceutical care under the supervision of a qualified pharmacist.
-                    </p>
-                    <p class="paragraph-text">
-                        We strive to offer transparent service, appropriate product guidance, and reliable prescription fulfillment for families across Khanna.
-                    </p>
-                    <div class="checklist-stack">
-                        <div class="check-row"><i class="fas fa-check"></i> Transparent & Ethical Dispensing</div>
-                        <div class="check-row"><i class="fas fa-check"></i> Optimal Storage & Quality Control</div>
-                        <div class="check-row"><i class="fas fa-check"></i> Dedicated Community Health Support</div>
-                    </div>
-                </div>
-                <div class="about-card-col">
-                    <div class="premium-trust-box">
-                        <div class="icon-header-box"><i class="fas fa-award"></i></div>
-                        <h3>Professional Pharmacy Care</h3>
-                        <ul class="bullet-list-check">
-                            <li><i class="fas fa-check-circle"></i> Licensed Pharmacy</li>
-                            <li><i class="fas fa-check-circle"></i> Qualified Pharmacist</li>
-                            <li><i class="fas fa-check-circle"></i> Quality Medicines</li>
-                            <li><i class="fas fa-check-circle"></i> Responsible Guidance</li>
-                        </ul>
-                        <div class="location-badge-pill">
-                            <i class="fas fa-map-marker-alt"></i> Serving Khanna, Punjab
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SERVICES SECTION -->
-    <section class="services-section section-padding bg-light-tint" id="services">
-        <div class="container">
-            <div class="section-title-wrapper text-center">
-                <span class="section-badge-tag"><i class="fas fa-hand-holding-medical"></i> Our Offerings</span>
-                <h2 class="section-heading">Healthcare Services You Can Trust</h2>
-                <p class="section-subtext">Essential medicines and healthcare products for your everyday needs.</p>
-            </div>
-
-            <div class="services-grid-layout">
-                <div class="service-premium-card">
-                    <div class="service-icon-box"><i class="fas fa-prescription"></i></div>
-                    <h3>Prescription Medicines</h3>
-                    <p>Medicines dispensed responsibly against valid prescriptions.</p>
-                </div>
-                <div class="service-premium-card">
-                    <div class="service-icon-box"><i class="fas fa-capsules"></i></div>
-                    <h3>OTC Medicines</h3>
-                    <p>Common over-the-counter healthcare products for everyday needs.</p>
-                </div>
-                <div class="service-premium-card">
-                    <div class="service-icon-box"><i class="fas fa-tablets"></i></div>
-                    <h3>Generic Medicines</h3>
-                    <p>Access to quality generic medicines where appropriate.</p>
-                </div>
-                <div class="service-premium-card">
-                    <div class="service-icon-box"><i class="fas fa-band-aid"></i></div>
-                    <h3>Surgical Items</h3>
-                    <p>Essential surgical and healthcare supplies.</p>
-                </div>
-                <div class="service-premium-card">
-                    <div class="service-icon-box"><i class="fas fa-baby"></i></div>
-                    <h3>Baby Care Products</h3>
-                    <p>Selected healthcare and personal care products for babies.</p>
-                </div>
-                <div class="service-premium-card">
-                    <div class="service-icon-box"><i class="fas fa-heartbeat"></i></div>
-                    <h3>Health Supplements</h3>
-                    <p>Vitamins and healthcare supplements for everyday wellness.</p>
-                </div>
-                <div class="service-premium-card">
-                    <div class="service-icon-box"><i class="fas fa-stethoscope"></i></div>
-                    <h3>BP & Sugar Care</h3>
-                    <p>Supportive products for routine blood pressure and blood sugar care.</p>
-                </div>
-                <div class="service-premium-card">
-                    <div class="service-icon-box"><i class="fas fa-truck-medical"></i></div>
-                    <h3>Home Delivery</h3>
-                    <p>Convenient local delivery for eligible orders.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- HOW TO ORDER -->
-    <section class="order-section section-padding" id="order">
-        <div class="container">
-            <div class="section-title-wrapper text-center">
-                <span class="section-badge-tag"><i class="fas fa-shopping-cart"></i> Convenient Ordering</span>
-                <h2 class="section-heading">Order Medicines on WhatsApp</h2>
-                <p class="section-subtext">Quick, simple, and direct communication with your local pharmacist.</p>
-            </div>
-
-            <div class="steps-grid-layout">
-                <div class="step-card-item">
-                    <div class="step-number-big">01</div>
-                    <h3>Send Your Requirement</h3>
-                    <p>Message us your list of required medicines or healthcare products directly on WhatsApp.</p>
-                </div>
-                <div class="step-card-item">
-                    <div class="step-number-big">02</div>
-                    <h3>Share Prescription</h3>
-                    <p>Upload a clear photo of your valid medical prescription for verification and dispensing.</p>
-                </div>
-                <div class="step-card-item">
-                    <div class="step-number-big">03</div>
-                    <h3>Confirm Order</h3>
-                    <p>Verify availability, pricing, and delivery or pickup details with our pharmacist.</p>
-                </div>
-            </div>
-
-            <div class="order-bottom-action text-center">
-                <a href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20would%20like%20to%20place%20an%20order." target="_blank" class="btn btn-primary btn-xl">
-                    <i class="fab fa-whatsapp"></i> Start WhatsApp Order
-                </a>
-                <p class="legal-disclaimer-text">
-                    <i class="fas fa-info-circle"></i> Prescription medicines are dispensed only in accordance with applicable laws and valid prescriptions where required.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- PHARMACIST SECTION -->
-    <section class="pharmacist-section section-padding bg-light-tint" id="pharmacist">
-        <div class="container">
-            <div class="pharmacist-profile-card">
-                <div class="pharmacist-avatar-col">
-                    <div class="avatar-circle-box">
-                        <i class="fas fa-user-tie"></i>
-                        <div class="badge-overlay-bpharma">B.Pharma</div>
-                    </div>
-                </div>
-                <div class="pharmacist-details-col">
-                    <span class="section-badge-tag"><i class="fas fa-user-md"></i> Expert Supervision</span>
-                    <h2 class="section-heading">Kartik Sharma</h2>
-                    <div class="badges-row">
-                        <span class="pill-tag"><i class="fas fa-graduation-cap"></i> B.Pharma</span>
-                        <span class="pill-tag"><i class="fas fa-business-time"></i> 2 Years Experience</span>
-                    </div>
-                    <p class="quote-text">
-                        "Ensuring correct dispensing, patient guidance, and ethical pharmaceutical practices for our community."
-                    </p>
-                    <div class="pharmacist-features-grid">
-                        <div class="feat-box">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Professional Care</h4>
-                                <p>Strict adherence to protocols</p>
-                            </div>
-                        </div>
-                        <div class="feat-box">
-                            <i class="fas fa-check-circle"></i>
-                            <div>
-                                <h4>Ethical Practices</h4>
-                                <p>Authentic guidance & sourcing</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WHY CHOOSE US -->
-    <section class="why-section section-padding" id="why-us">
-        <div class="container">
-            <div class="section-title-wrapper text-center">
-                <span class="section-badge-tag"><i class="fas fa-star"></i> Our Core Values</span>
-                <h2 class="section-heading">Why Families Choose Sharma Medical Store</h2>
-                <p class="section-subtext">Dedicated to serving the Khanna community with integrity and care.</p>
-            </div>
-
-            <div class="why-grid-layout">
-                <div class="why-card-item">
-                    <div class="why-icon-box"><i class="fas fa-shield-alt"></i></div>
-                    <h3>Genuine Medicines</h3>
-                    <p>Focused on quality, safety, and authenticity.</p>
-                </div>
-                <div class="why-card-item">
-                    <div class="why-icon-box"><i class="fas fa-user-md"></i></div>
-                    <h3>Qualified Pharmacist</h3>
-                    <p>Professional pharmacy care under a B.Pharma-qualified pharmacist.</p>
-                </div>
-                <div class="why-card-item">
-                    <div class="why-icon-box"><i class="fas fa-heart"></i></div>
-                    <h3>Patient Safety</h3>
-                    <p>Responsible dispensing and patient-focused guidance.</p>
-                </div>
-                <div class="why-card-item">
-                    <div class="why-icon-box"><i class="fas fa-map-pin"></i></div>
-                    <h3>Local Convenience</h3>
-                    <p>Conveniently located near Raj Hospital in Khanna.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- LOCATION & MAP SECTION -->
-    <section class="location-section section-padding bg-light-tint" id="contact">
-        <div class="container">
-            <div class="section-title-wrapper text-center">
-                <span class="section-badge-tag"><i class="fas fa-map-marked-alt"></i> Find Us</span>
-                <h2 class="section-heading">Conveniently Located in Khanna</h2>
-                <p class="section-subtext">Visit our store or get in touch for immediate medicine assistance.</p>
-            </div>
-
-            <div class="location-split-grid">
-                <div class="location-card-box">
-                    <div>
-                        <h3>Sharma Medical Store</h3>
-                        <p class="loc-addr">
-                            <i class="fas fa-map-marker-alt"></i> Near Raj Hospital, Lalheri Road,<br> Khanna, Punjab – 141401
-                        </p>
-                        <p class="loc-phone">
-                            <i class="fas fa-phone-alt"></i> Phone / WhatsApp: <a href="tel:+916284514807">+91 6284514807</a>
-                        </p>
-                    </div>
-                    <div class="location-buttons-stack">
-                        <a href="tel:+916284514807" class="btn btn-primary btn-block">
-                            <i class="fas fa-phone-alt"></i> Call Now
-                        </a>
-                        <a href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20have%20an%20inquiry." target="_blank" class="btn btn-whatsapp btn-block">
-                            <i class="fab fa-whatsapp"></i> WhatsApp Chat
-                        </a>
-                        <a href="https://www.google.com/maps?q=Sharma%20Medical%20Store%20Khanna" target="_blank" class="btn btn-outline btn-block">
-                            <i class="fas fa-directions"></i> Get Directions
-                        </a>
-                    </div>
-                </div>
-
-                <div class="map-frame-box">
-                    <iframe 
-                        src="https://www.google.com/maps?q=Sharma%20Medical%20Store%20Khanna&output=embed" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade"
-                        title="Sharma Medical Store Location Map">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT BANNER -->
-    <section class="contact-banner-gradient">
-        <div class="container text-center">
-            <h2>Need Immediate Assistance?</h2>
-            <p>Contact Sharma Medical Store for medicine availability, healthcare products, and local order support.</p>
-            <div class="banner-btns-flex">
-                <a href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20need%20assistance." target="_blank" class="btn btn-white btn-xl">
-                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
-                </a>
-                <a href="tel:+916284514807" class="btn btn-outline-white btn-xl">
-                    <i class="fas fa-phone-alt"></i> 6284514807
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer-section">
-        <div class="container">
-            <div class="footer-grid-layout">
-                <div class="footer-col-brand">
-                    <div class="brand-identity footer-brand-id">
-                        <div class="brand-icon-box">
-                            <i class="fas fa-plus"></i>
-                        </div>
-                        <div class="brand-titles">
-                            <span class="brand-title" style="color: #fff;">Sharma Medical</span>
-                            <span class="brand-subtitle">Store • Khanna</span>
-                        </div>
-                    </div>
-                    <p class="footer-highlight-text">Licensed Pharmacy • Professional Care</p>
-                    <p class="footer-small-muted">Designed with care for better local healthcare access.</p>
-                </div>
-
-                <div class="footer-col-links">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-nav-list">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#pharmacist">Pharmacist</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-col-contact">
-                    <h4>Contact Info</h4>
-                    <p><i class="fas fa-map-marker-alt"></i> Near Raj Hospital, Lalheri Road, Khanna, Punjab – 141401</p>
-                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+916284514807">+91 6284514807</a></p>
-                    <p><a href="https://wa.me/916284514807" target="_blank" class="footer-wa-pill"><i class="fab fa-whatsapp"></i> Order on WhatsApp</a></p>
-                </div>
-            </div>
-
-            <div class="footer-legal-disclaimer">
-                <p><strong>Disclaimer:</strong> Medicine availability and dispensing are subject to applicable laws and valid prescription requirements. For medical advice, consult a qualified healthcare professional.</p>
-            </div>
-
-            <div class="footer-bottom-row">
-                <p>&copy; 2026 Sharma Medical Store. All Rights Reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- FLOATING WHATSAPP -->
-    <a href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20would%20like%20to%20place%20an%20order." target="_blank" class="floating-whatsapp-btn" aria-label="Order on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-        <span class="tooltip-box">Order on WhatsApp</span>
-    </a>
-
-    <!-- MOBILE STICKY BOTTOM DOCK -->
-    <div class="mobile-sticky-dock">
-        <a href="tel:+916284514807" class="dock-btn dock-call">
-            <i class="fas fa-phone-alt"></i> Call Now
-        </a>
-        <a href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20would%20like%20to%20place%20an%20order." target="_blank" class="dock-btn dock-whatsapp">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-        </a>
-        <a href="https://www.google.com/maps?q=Sharma%20Medical%20Store%20Khanna" target="_blank" class="dock-btn dock-map">
-            <i class="fas fa-directions"></i> Directions
-        </a>
+    <div class="trust-badges">
+      <div class="trust-item"><span>✓</span> 100% Genuine Medicines</div>
+      <div class="trust-item"><span>✓</span> B.Pharma Supervised</div>
+      <div class="trust-item"><span>✓</span> Fast Local Delivery</div>
     </div>
+  </div>
+</section>
 
-    <!-- JavaScript Scripting -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Mobile Drawer Navigation Toggle
-            const hamburgerBtn = document.getElementById('hamburgerBtn');
-            const navDrawer = document.getElementById('navDrawer');
-            const drawerClose = document.getElementById('drawerClose');
-            const navLinks = document.querySelectorAll('.nav-link');
+<section id="about">
+  <div class="container">
+    <div class="section-head">
+      <span class="badge">About Our Pharmacy</span>
+      <h2>Committed to Community Care & Quality</h2>
+      <p>Located conveniently near Raj Hospital on Lalheri Road, Sharma Medical Store follows strict ethical dispensing protocols, ensuring safe storage, proper refrigeration, and verified medication handling for families across Khanna.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="icon-box">🛡️</div>
+        <h3>Ethical Dispensing</h3>
+        <p>Strict adherence to standard medical guidelines, valid prescription policies, and complete transparency.</p>
+      </div>
+      <div class="card">
+        <div class="icon-box">🌡️</div>
+        <h3>Proper Storage</h3>
+        <p>Temperature-controlled storage ensuring vaccines, insulin, and sensitive injectables maintain potency.</p>
+      </div>
+      <div class="card">
+        <div class="icon-box">🤝</div>
+        <h3>Patient Guidance</h3>
+        <p>Professional advice regarding medication dosage, proper schedules, and side-effect awareness.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-            function toggleMenu() {
-                navDrawer.classList.toggle('active');
-                document.body.classList.toggle('menu-open', navDrawer.classList.contains('active'));
-            }
+<section id="services" style="background: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-head">
+      <span class="badge">Healthcare Catalog</span>
+      <h2>Products & Services We Offer</h2>
+      <p>Everything you need for your family's daily wellness and specialized prescriptions under one roof.</p>
+    </div>
+    <div class="grid grid-2 grid-4">
+      <div class="card"><div class="icon-box">📋</div><h3>Prescription Drugs</h3><p>Verified prescription fulfillment for acute and chronic conditions.</p></div>
+      <div class="card"><div class="icon-box">💊</div><h3>OTC Medicines</h3><p>Relief medications for common ailments, fever, pain, and allergies.</p></div>
+      <div class="card"><div class="icon-box">🌿</div><h3>Health Supplements</h3><p>Vitamins, immunity boosters, and daily nutritional supplements.</p></div>
+      <div class="card"><div class="icon-box">🧰</div><h3>Surgical Supplies</h3><p>First aid kits, bandages, dressings, and home care equipment.</p></div>
+      <div class="card"><div class="icon-box">🍼</div><h3>Baby Care</h3><p>Safe baby formulas, diapers, and gentle skin care essentials.</p></div>
+      <div class="card"><div class="icon-box">❤️</div><h3>Monitoring Care</h3><p>Blood pressure monitors, glucometers, and testing strips.</p></div>
+      <div class="card"><div class="icon-box">🧴</div><h3>Personal Wellness</h3><p>Dermatological essentials, oral hygiene, and wellness items.</p></div>
+      <div class="card"><div class="icon-box">🛵</div><h3>Home Delivery</h3><p>Convenient delivery options right to your doorstep in Khanna.</p></div>
+    </div>
+  </div>
+</section>
 
-            // Close mobile menu with Escape and restore page scrolling.
-            document.addEventListener('keydown', (event) => {
-                if (event.key === 'Escape' && navDrawer.classList.contains('active')) {
-                    navDrawer.classList.remove('active');
-                    document.body.classList.remove('menu-open');
-                }
-            });
+<section id="order">
+  <div class="container">
+    <div class="section-head">
+      <span class="badge">Quick & Simple</span>
+      <h2>How to Order via WhatsApp</h2>
+      <p>Skip the trip—send us your prescription in 3 easy steps.</p>
+    </div>
+    <div class="step-list" style="max-width: 680px;">
+      <div class="step-card">
+        <div class="step-number">1</div>
+        <div>
+          <h3>Take a Prescription Photo</h3>
+          <p>Snap a clear picture of your doctor's valid medical prescription.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-number">2</div>
+        <div>
+          <h3>Send on WhatsApp</h3>
+          <p>Message us directly at +91 62845-14807 along with your delivery address.</p>
+        </div>
+      </div>
+      <div class="step-card">
+        <div class="step-number">3</div>
+        <div>
+          <h3>Confirm & Receive</h3>
+          <p>Our pharmacist verifies the items and gets them ready for pickup or fast delivery.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 28px; max-width: 320px;">
+      <a class="btn btn-primary" href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener">💬 Start WhatsApp Order</a>
+    </div>
+  </div>
+</section>
 
-            if (hamburgerBtn) hamburgerBtn.addEventListener('click', toggleMenu);
-            if (drawerClose) drawerClose.addEventListener('click', toggleMenu);
+<section id="pharmacist" style="background: #fff; border-top: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-head">
+      <span class="badge">Expert Oversight</span>
+      <h2>Meet Your Pharmacist</h2>
+    </div>
+    <div class="pharmacist-box" style="max-width: 640px;">
+      <div class="pharm-header">
+        <div class="pharm-avatar">KS</div>
+        <div class="pharm-info">
+          <h3>Kartik Sharma</h3>
+          <p>B.Pharma • Professional Licensed Pharmacist</p>
+        </div>
+      </div>
+      <p class="pharm-quote">“My priority is ensuring that every patient receives accurate medication advice, genuine products, and compassionate pharmaceutical care.”</p>
+    </div>
+  </div>
+</section>
 
-            // Close drawer when clicking any navigation link
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    if (navDrawer.classList.contains('active')) {
-                        navDrawer.classList.remove('active');
-                        document.body.classList.remove('menu-open');
-                    }
-                });
-            });
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="badge">Visit Us</span>
+      <h2>Store Location & Contact</h2>
+    </div>
+    <div class="contact-card" style="max-width: 640px;">
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <strong>Address</strong>
+          <span>Near Raj Hospital, Lalheri Road, Khanna, Punjab – 141401</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <strong>Phone & WhatsApp</strong>
+          <span>+91 62845-14807</span>
+        </div>
+      </div>
+      <div class="btn-row" style="margin-top: 20px;">
+        <a class="btn btn-call" href="tel:+916284514807">📞 Call Store Now</a>
+        <a class="btn btn-primary" href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20have%20an%20inquiry." target="_blank" rel="noopener">💬 WhatsApp Chat</a>
+      </div>
+      <div class="map-container">
+        <iframe loading="lazy" title="Sharma Medical Store Location Map" src="https://www.google.com/maps?q=Sharma%20Medical%20Store%20Khanna&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
 
-            // Sticky Navbar Transition on Scroll
-            const navbar = document.getElementById('navbar');
-            window.addEventListener('scroll', () => {
-                if (window.scrollY > 30) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            });
+</main>
 
-            // Active Navigation Highlighting on Scroll
-            const sections = document.querySelectorAll('section');
-            window.addEventListener('scroll', () => {
-                let current = '';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop;
-                    if (window.scrollY >= (sectionTop - 140)) {
-                        current = section.getAttribute('id');
-                    }
-                });
+<footer>
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <strong>Sharma Medical Store • Khanna</strong>
+      <p style="margin-top: 8px;">Licensed retail pharmacy committed to high professional standards and community health.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#order">How to Order</a></li>
+        <li><a href="#contact">Contact & Map</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Emergency Contact</h4>
+      <ul>
+        <li>Near Raj Hospital, Lalheri Road, Khanna, Punjab – 141401</li>
+        <li><a href="tel:+916284514807">+91 62845-14807</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>Prescription medicines dispensed in accordance with statutory regulations. Always consult a certified physician for medical advice.</span>
+    <span>© 2026 Sharma Medical Store. All Rights Reserved.</span>
+  </div>
+</footer>
 
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${current}`) {
-                        link.classList.add('active');
-                    }
-                });
-            });
+<div class="bottom-bar" role="navigation" aria-label="Mobile quick action bar">
+  <a class="bar-btn bar-call" href="tel:+916284514807">📞 Call<small>Direct Line</small></a>
+  <a class="bar-btn bar-wa" href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20I%20want%20to%20order%20medicines." target="_blank" rel="noopener">💬 WhatsApp<small>Order Now</small></a>
+  <a class="bar-btn bar-rx" href="https://wa.me/916284514807?text=Hello%20Sharma%20Medical%20Store,%20here%20is%20my%20prescription." target="_blank" rel="noopener">📋 Send Rx<small>Upload Photo</small></a>
+</div>
 
-            // Smooth Scroll Enhancement
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return;
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        e.preventDefault();
-                        targetElement.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn'),
+      drawer = document.getElementById('drawer'),
+      backdrop = document.getElementById('backdrop'),
+      closeBtn = document.getElementById('drawerClose');
+
+  function openMenu(){
+    drawer.classList.add('open');
+    backdrop.classList.add('open');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+  
+  function closeMenu(){
+    drawer.classList.remove('open');
+    backdrop.classList.remove('open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    menuBtn.focus();
+  }
+
+  menuBtn.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', closeMenu);
+  backdrop.addEventListener('click', closeMenu);
+  drawer.querySelectorAll('[data-close]').forEach(function(el){
+    el.addEventListener('click', closeMenu);
+  });
+  
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape' && drawer.classList.contains('open')) closeMenu();
+  });
+})();
+</script>
 </body>
 </html>
